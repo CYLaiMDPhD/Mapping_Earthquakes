@@ -25,6 +25,8 @@ hs_err_pid*
 
 #Other
 .DS_Store
+config.js
+config.txt
 config.py
 practice.ipynb
 random.ipynb
