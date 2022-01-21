@@ -5,11 +5,11 @@ console.log("working");
 // Create the map object with a center and zoom level.
 // Center on California[37.5, -122.5]
 // Center on Earth [30,30]
-let map = L.map('mapid').setView([30,30], 2);
+// let map = L.map('mapid').setView([30,30], 2);
 
 
 // Tile Background Layer:
-let backgroundMap = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+let streets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
     id: "streets-v11",
@@ -17,7 +17,7 @@ attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap
 });
 
 // Then we add our 'graymap' tile layer to the map.
-backgroundMap.addTo(map);
+// streets.addTo(map);
 
 // MODULE 13.5.1 ------------------------------------
 // // GeoJSON Data for SFO:
@@ -61,5 +61,50 @@ backgroundMap.addTo(map);
 // }).addTo(map);
 
 
+// MODULE 13.5.3 - Using GeoJSON file from github repository
+let airportData = "https://raw.githubusercontent.com/CYLaiMDPhD/Mapping_Earthquakes/main/majorAirports.json";
+// // Grab data from github with D3:
+// d3.json(airportData).then(function(data) {
+//     console.log(data);
+//   // Creating a GeoJSON layer with the retrieved data.
+//   L.geoJSON(data,{
+//     onEachFeature: function(feature, layer) {
+//       layer.bindPopup("<h2>"+feature.properties.name+"</h2><hr><h3>"+feature.properties.city+", "+feature.properties.country+"</h3>");
+//      }
+//      }).addTo(map);});
 
+
+// Module 13.5.4 - Multiple Maps
+
+// Dark tile
+let dark = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    accessToken: API_KEY
+});
+
+// baseMap variable to hold tile options
+let baseMaps = {
+  Street: streets,
+  Dark: dark
+};
+
+let map = L.map("mapid", {
+  center: [30,30],
+  zoom: 2,
+  layers: [streets]
+});
+
+// Layers control
+L.control.layers(baseMaps).addTo(map);
+
+// Airports Data
+d3.json(airportData).then(function(data) {
+    console.log(data);
+  // Creating a GeoJSON layer with the retrieved data.
+  L.geoJSON(data,{
+    onEachFeature: function(feature, layer) {
+      layer.bindPopup("<h2>"+feature.properties.name+"</h2><hr><h3>"+feature.properties.city+", "+feature.properties.country+"</h3>");
+     }
+     }).addTo(map);});
 
