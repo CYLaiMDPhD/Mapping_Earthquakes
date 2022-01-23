@@ -20,6 +20,7 @@ In this module, we learned how to create interactive maps using leaflet, mapbox,
 - - plotting points, line strings, polygons
 - Leaflet layer controls
 - Leaflet DOM utility
+- Working with Git branches
 
 
 ---
