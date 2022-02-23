@@ -4,7 +4,7 @@
 
 
 ## Overview
-In this module, we created interactive maps using Leaflet, Mapbox, and JSON/geoJSON data from various public sources. To see the final product of the module, load the index.html file from the Earthquakes_Challenge folder (requires a Mapbox API key), which will display recent earthquake data from the USGS. Ring colors and diameter reflect earthquake magnitude. Toggle between street and satellite map views and select all earthquakes or major earthquakes for display (Figures 1 and 2 below).
+In this module, we created interactive maps using Leaflet, Mapbox, and JSON/geoJSON data from various public sources. To see the final product of the module, load the index.html file from the Earthquakes_Challenge folder (requires a Mapbox API key), which will display recent earthquake data from the USGS. Marker colors and diameters reflect earthquake magnitude. Toggle between street (Figure 1) and satellite map views (Figure 2) and select all earthquakes or major earthquakes (Figure 3) for display.
 
 
 **Data Source:**
@@ -12,10 +12,13 @@ In this module, we created interactive maps using Leaflet, Mapbox, and JSON/geoJ
 USGS: https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson
 
 
-**Figure 1: All Earthquakes for Past Week ()**
+**Figure 1: All Earthquakes on Streetview Map (Week of 2-17-22 to 2-23-22)**
 
 
-**Figure 2: Majow Earthquakes for Past Week ()**
+**Figure 2: All Earthquakes on Satellite Map (Week of 2-17-22 to 2-23-22)**
+
+
+**Figure 3: Major Earthquakes (Week of 2-17-22 to 2-23-22)**
 
 
 ---
