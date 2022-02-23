@@ -8,6 +8,7 @@ In this module, we created interactive maps using Leaflet, Mapbox, and JSON/geoJ
 
 
 **Data Source:**
+
 USGS: https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson
 
 
@@ -19,13 +20,13 @@ USGS: https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson
 
 ---
 ## Module Exercises
-- Creating basic maps and tile layers in Leaflet with calls to Mapbox API.
-- Plotting points and markers using JSON data.
-  - changing marker shapes and appearance.
-- Plotting lines and linestrings using JSON data.
-  - changing line styles.
-- Plotting polygons using JSON data.
-  - changing shape attributes.
+- Creating basic maps and tile layers in Leaflet with calls to Mapbox API
+- Plotting points and markers using JSON data
+  - changing marker shapes and appearance
+- Plotting lines and linestrings using JSON data
+  - changing line styles
+- Plotting polygons using JSON data
+  - changing shape attributes
 - Plotting maps using GeoJSON data
   - plotting points, line strings, polygons
 - Leaflet layer controls
