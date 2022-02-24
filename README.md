@@ -14,12 +14,12 @@ USGS: https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson
 
 **Figure 1: All Earthquakes on Streetview Map (Week of 2-17-22 to 2-23-22)**
 
-![Fig3.png](/Images/Fig3.png)
+![Fig1.png](/Images/Fig1.png)
 
 
 **Figure 2: All Earthquakes on Satellite Map (Week of 2-17-22 to 2-23-22)**
 
-![Fig3.png](/Images/Fig3.png)
+![Fig2.png](/Images/Fig2.png)
 
 
 **Figure 3: Major Earthquakes (Week of 2-17-22 to 2-23-22)**
