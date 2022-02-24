@@ -4,7 +4,7 @@
 
 
 ## Overview
-In this module, we created interactive maps using Leaflet, Mapbox, and JSON/geoJSON data from various public sources. To see the final product of the module, load the index.html file from the Earthquakes_Challenge folder (requires a Mapbox API key), which will display recent earthquake data from the USGS. Marker colors and diameters reflect earthquake magnitude. Toggle between street (Figure 1) and satellite map views (Figure 2) and select all earthquakes or major earthquakes (Figure 3) for display.
+In this module, we created interactive maps using Leaflet, Mapbox, and JSON/geoJSON data from various public sources. To see the final product of the module, load the index.html file from the Earthquakes_Challenge folder (requires a MapBox API key), which will display recent earthquake data from the USGS. Marker colors and diameters reflect earthquake magnitude. Toggle between street (Figure 1), satellite map (Figure 2), or dark mode view and select all earthquakes or major earthquakes (Figure 3) for display.
 
 
 **Data Source:**
@@ -14,11 +14,17 @@ USGS: https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson
 
 **Figure 1: All Earthquakes on Streetview Map (Week of 2-17-22 to 2-23-22)**
 
+![Fig3.png](/Images/Fig3.png)
+
 
 **Figure 2: All Earthquakes on Satellite Map (Week of 2-17-22 to 2-23-22)**
 
+![Fig3.png](/Images/Fig3.png)
+
 
 **Figure 3: Major Earthquakes (Week of 2-17-22 to 2-23-22)**
+
+![Fig3.png](/Images/Fig3.png)
 
 
 ---
